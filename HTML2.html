@@ -1,0 +1,183 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Мои путешествия</title>
+<link href="HTML2.css" rel="stylesheet">
+</head>
+<body link="#660033" alink="red" vlink="grey">
+<div id="header">
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Самолетик.jpg" alt="Самолетик" width=100% height="150">
+<h1 align="center">Мои путешествия</h1>
+</div>
+<div id="sidebar">
+<h2 align="center">Меню</h2>
+<ul id="menu" align="center">
+<li>
+<a href="Laba11.html">Главное меню</a>
+</li>
+<li>
+<a href="#SP">Санкт-Питербург</a>
+</li>
+<li>
+<a href="#M">Москва</a>
+</li>
+<li>
+<a href="#K">Казань</a>
+</li>
+</ul>
+</div>
+
+
+<div class="wrapper">
+<div class="left">
+<div class="scrolling">
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/И.jpg" width="250" height="200" alt="И"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/К.jpg" width="250" height="200" alt="К"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/С1.jpg" width="250" height="200" alt="С1"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Ка.jpg" width="250" height="200" alt="Ка"/>
+</div>
+</div>
+<div class="right">
+<h2 align="center"><a name = "SP">Санкт-Петербург</h2>
+<h4>Санкт-Петербург - второй по численности населения город России, который часто называют «Северной столицей». Расположен на северо-западе европейской части страны в восточной акватории Балтийского моря в устье реки Невы. Санкт-Петербург - один из самых потрясающих городов Европы, имеющий огромное историческое и культурное наследие, а также волшебную атмосферу. Это город удивительной архитектуры, романтики и вдохновения, разводных мостов и белых ночей. </h4>
+<button id="myBtn">Любителям путешествий!</button>
+<div id="myModal" class="modal">
+
+ 
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Интересные факты о Санкт-Петербурге</h2>
+    </div>
+    <div class="modal-body">
+      <p>1. В 1837 году в Северной Столице открыли первую российскую железную дорогу по направлению Петербург-Царское село.</p>
+
+	  <p>2. В 18 веке территории около Тучкова моста называли "Мокруши". Выходившая из берегов Нева, часто заливала водой эти районы.</p>
+
+	  <p>3. Большинство домов, зданий, мостовых и тротуаров в Петербурге 19 века строились из дерева. По этой причине курение на городских улицах было под строжайшим запретом. Брошенный окурок мог стать причиной пожара.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Если эта информация вас заинтересовала, то прочитайте интересные факты про другие города)</h3>
+    </div>
+  </div>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+    modal.style.display = "block";}
+span.onclick = function() {
+    modal.style.display = "none";}
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";}}
+</script>
+</div>
+</div>
+</div>
+
+
+
+<div class="wrapper">
+<div class="left">
+<div class="scrolling">
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Кр.jpg" width="210" height="180" alt="Кр"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Со.jpg" width="210" height="180" alt="Со"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Пр.jpg" width="210" height="180" alt="Пр"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Р.jpg" width="210" height="180" alt="Р"/>
+</div>
+</div>
+<div class="right">
+<h2 align="center">Москва</h2>
+<h4>Москва - столица России и крупнейший город страны. Это огромный мегаполис, который является историческим, политическим и духовным сердцем Российской Федерации. Москва - крупнейшая столица Европы, наполненная достопримечательностями, памятниками истории и культуры, а также музеями мирового уровня. Это город невероятной динамики и размеров, который невозможно объять за одну поездку.</h4>
+<button id="myBtn2">Для тех, кто любит путешествовать!</button>
+<div id="myModal2" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Интересные факты о Москве</h2>
+    </div>
+    <div class="modal-body">
+      <p>1. Москва - самый пыльный город Европы и один из 10 наиболее загрязненных городов мира. Две тонны отбросов и загрязняющих веществ в минуту выбрасывается в атмосферу современной Москвы.</p>
+
+	  <p>2. Москва получила свое название от реки. По одной из версий "Москва" означает "сырость", корень "моск" значит "вязкий, топкий" или "болото".</p>
+
+	  <p>3. Московская Останкинская башня - это десятое по высоте в мире свободно стоящее сооружение на сегодняшний день, а на момент постройки оно занимало первое место. Высота башни 540 метров. В советские времена там располагался ресторан "Седьмое небо" на высоте 334 метра, но после пожара 2000 года ресторан был закрыт. Спустя долгие 16 лет ресторанный комплекс возобновил свою работу.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Если эта информация вас заинтересовала, то прочитайте интересные факты про другие города)</h3>
+    </div>
+  </div>
+<script>
+var modal2 = document.getElementById('myModal2');
+var btn2 = document.getElementById("myBtn2");
+var span = document.getElementsByClassName("close")[1];
+btn2.onclick = function() {
+    modal2.style.display = "block";}
+span.onclick = function() {
+    modal2.style.display = "none";}
+window.onclick = function(event) {
+    if (event.target == modal2) {
+        modal.style.display = "none";}}
+</script>
+</div>
+</div>
+</div>
+
+
+<div class="wrapper">
+<div class="left">
+<div class="scrolling">
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Ми.jpg" width="210" height="180" alt="Ми"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Ш.jpg" width="210" height="180" alt="Ш"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Бе.jpg" width="210" height="180" alt="Бе"/>
+<img src="C:/Users/Ксения/Desktop/Институт2/HTML/images/Каз.jpg" width="210" height="180" alt="Каз"/>
+</div>
+</div>
+<div class="right">
+<h2 align="center">Казань</h2>
+<h4>Казань – столица Республики Татарстан и один из самых древних городов России. Казань расположилась на левом берегу Волги в том месте, где в нее впадает река Казанка. Эта река течет с северо-востока на запад, пересекая центр города и условно разделяя его на две части. Попасть из одной части Казани в другую очень легко, так как городские районы связывают дамбы, мост и линия метрополитена.</h4>
+<button id="myBtn3">Расширьте свои горизонты!</button>
+<div id="myModal3" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Интересные факты о Казани</h2>
+    </div>
+    <div class="modal-body">
+      <p>1. В 2009 году в Роспатенте зарегистрировали бренд «Третья столица России» и присвоили Казани товарный знак. Теперь Казань официально носит это звание. Высокий статус достался городу не без борьбы. Главным претендентом на высокий статус и конкурентом Казани был Нижний Новгород.</p>
+
+	  <p>2. Согласно результатам переписи населения, которая проводилась в Казани в 1738 году, город оказался самым густонаселенным в России и переплюнул по этому показателю даже Белокаменную. Численность населения Казани в XVIII веке составила около 200 тысяч человек, тогда как в Москве насчитывалось около 140 тысяч. Этот интересный факт о Казани – весомый аргумент в пользу статуса третьей столицы России.</p>
+
+	  <p>3. Город был основан в далеком 1005 году, когда Москвы еще не было в помине. Исторические хроники указывают на то, что Белокаменную начали возводить почти на полторы сотни лет позже, а именно в 1147 году. Более того, Казань входит в список старейших городов восточной Европы и уступает разве что Киеву и Праге.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Если эта информация вас заинтересовала, то прочитайте интересные факты про другие города)</h3>
+    </div>
+  </div>
+<script>
+var modal3 = document.getElementById('myModal3');
+var btn3 = document.getElementById("myBtn3");
+var span = document.getElementsByClassName("close")[2];
+btn3.onclick = function() {
+    modal3.style.display = "block";}
+span.onclick = function() {
+    modal3.style.display = "none";}
+window.onclick = function(event) {
+    if (event.target == modal3) {
+        modal3.style.display = "none";}}
+</script>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<p>Контактная информация:
+<br>Телефон:<ins>8-904-000-00-00</ins>
+<br><a href="https://vk.com/id85896647" target="_blank">Cтраница в ВКонтакте</a></p>
+</div>
+<center>
+<marquee class = "one" behavior ="alternate" direction=right scrollamount=12>Путешествия</marquee>
+</center>
+</body>
+</html>
